@@ -23,11 +23,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   async function addNewUser() {
-    await api.post('/usuarios', {
+    await api.post('/users', {
       name: inputName.current.value,
       age: parseInt(inputAge.current.value)
     })
-    navigate('/usuarios');
+    navigate('/users');
   }
   useEffect(() => {
   }, [])

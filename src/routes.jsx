@@ -13,7 +13,7 @@ const Router = createBrowserRouter([
     },
 
     {
-        path: '/usuarios',
+        path: '/users',
         element: <Users />
     }
 ])

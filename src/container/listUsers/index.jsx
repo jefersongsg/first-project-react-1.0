@@ -22,12 +22,12 @@ const Users = () => {
   const [usuarios, setUsuarios] = useState([])
 
   const getUsers = async () => {
-    const newUsers = await api.get('/usuarios');
+    const newUsers = await api.get('/users');
     setUsuarios(newUsers.data);
   }
 
   const deleteUser = async (id) => {
-    await api.delete(`/usuarios/${id}`)
+    await api.delete(`/users/${id}`)
     const updateUsers = usuarios.filter(user => user.id !== id)
     setUsuarios(updateUsers)
 
